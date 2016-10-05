@@ -1,0 +1,50 @@
+<div style="position: absolute; height: 2px; width: 2px; overflow: hidden; background-color: white; visibility: hidden; top: 421.777px; left: 182.4px;"></div>
+
+
+
+<style>.fixed_menu{
+			position:fixed!important;top:0px!important;background:#fff!important;
+			}
+			.text_shadow{
+			text-shadow:0px!important;
+			}</style>
+
+<script>
+    $(window).scroll(function(){
+	    if($(this).scrollTop()>46){
+            $('#top_menu').fadeIn(500).addClass("fixed_menu shadow_box1");
+            $('#cssmenu').removeClass('text_shadow4');
+            $('#submenu_color').css({'color':'#ffa200 !important'});
+            document.getElementById('logo').src='/images/logo/5000years-1.png';
+            $('head').append('<link rel="stylesheet" href="/desktop/css/menu2.css" type="text/css" />');
+            $('#icon-user').css({'background':'url(/images/icon-user.png)'});
+        }else{
+            $('#top_menu').removeClass("fixed_menu shadow_box1");
+            $('#cssmenu').addClass('text_shadow4');
+            $('#submenu_color').css({'color':'#fff !important'});
+            document.getElementById('logo').src='/images/logo/5000years.png';
+            $('head').append('<link rel="stylesheet" href="/desktop/css/menu.css" type="text/css" />');
+            $('#icon-user').css({'background':'url(/images/icon-user-over.png)'});
+        }
+
+    });
+</script>
+
+<div id="top_menu" class="w100 left fixed_menu shadow_box1" style="height: 43px; z-index: 999; top: 10px; position: absolute;">
+<table class="table_align_center" style="width: 931px;">
+<tbody><tr>
+<td>
+<div class="left w100">
+<div style="position: relative;padding-left: 10px;padding-top: 3px;" class="left">
+<a href="/kh/">
+<img id="logo" src="/images/logo/5000years-1.png" height="38">
+</a>
+</div>
+
+
+<td>
+<div class="left w100">
+<div style="position: relative;padding-left: 10px;padding-top: 3px;" class="left">
+<a href="/kh/">
+<img id="logo" src="/images/logo/5000years.png" height="38">
+</a>
